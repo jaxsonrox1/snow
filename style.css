@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'SF Display Regular';
+    src: url('assets/SF-Pro-Display-Light.otf') format('woff');
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    background: url('stars.png') repeat;
+    background-size: 700px;
+    color: white;
+    backdrop-filter: blur(1.5px) brightness(0.3);
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    background-blend-mode: overlay;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #3fb4f8 #1a4c69;
+    width: 150px;
+    height: auto;
+    background-image: url('assets/logo.png');
+    background-size: cover;
+    padding: 20px;
+}
+
+.links {
+    float: right;
+    height: 100px;
+    padding-right: 10px;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-family: 'SF Display Regular', sans-serif;
+    padding: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #3fb4f8;
+    transition: 0.5s;
+}
+
+.links button {
+    font-family: 'SF Display Regular', sans-serif;
+    background-color: #3fb4f8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.links button:hover {
+    background-color: #3fe3f8;
+    transition: 0.5s;
+}
+
+.section1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section1 h1 {
+    font-family: 'Roboto';
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.section1 h1 span {
+    color: #3fb4f8;
+}
+
+.section1 h2 {
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.section1 button {
+    font-family: 'SF Display Regular', sans-serif;
+    background-color: #3fb4f8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.05));
+}
+
+.section1 button:hover {
+    background-color: #3fe3f8;
+    transition: 0.5s;
+}
+
+.section1 {
+    text-align: center;
+}
+
+.section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.section2 img {
+    height: 500px;
+    width: auto;
+    margin-right: 20px;
+    padding-right: 40px;
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.05));
+}
+
+.section2 h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.section2 p {
+    font-size: 24px;
+    color: gray;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 700px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section3 {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    align-items: flex-start;
+}
+
+
+.cards {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
+    border: 2px solid #686868;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.card1 {
+    width: 500px;
+    height: auto;
+    border: 2px solid #686868;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    padding-bottom: 23px;
+}
+
+.card1 h2 {
+    color: #3fb4f8;
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'SF Display Regular';
+}
+
+.card1 span {
+    color: #3fb4f8;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-right: 8px;
+}
+
+
+.card1 p {  
+    font-size: 19px;
+    color: gray;
+}
+
+
+.cardWrapper1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* optional spacing between card1 and card3 */
+}
+
+.card2 {
+    width: 320px;
+    height: auto;
+    border: 2px solid #686868;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.card2 h2 {
+    font-size: 40px;
+    font-family: 'SF Display Regular';
+    margin-top: 10px;
+    color: #3fb4f8;
+}
+
+.card2 p {
+    color: gray;
+    font-size: 20px;
+}
+
+.card2 span {
+    vertical-align: middle;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-right: 8px;
+    color: #3fb4f8;
+}
+
+.card3 {
+    width: 520px;
+    height: 360px;
+    padding: 20px;
+}
+
+.card3 h2 {
+    color: #3fb4f8;
+    font-size: 40px;
+    font-family: 'SF Display Regular';
+    margin-top: 10px;
+}
+
+.card3 p {
+    color: gray;
+    font-size: 20px;
+}
+
+.card3 span {
+    color: #3fb4f8;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-right: 8px;
+}
+
+.section4 {
+    height: 100vw;
+}
+
+
